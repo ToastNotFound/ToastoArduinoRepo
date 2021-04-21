@@ -1,6 +1,0 @@
-{
-    "board": "arduino:avr:uno",
-    "port": "COM5",
-    "programmer": "arduino:avrisp",
-    "sketch": "NEOPixel_Testing_Red_To_White\\Red to White.ino"
-}

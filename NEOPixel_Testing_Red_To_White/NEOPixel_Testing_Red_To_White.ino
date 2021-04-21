@@ -16,7 +16,6 @@ void setup() {
 #endif
 
   pinMode(2,INPUT_PULLUP); //Tells the board to treat pin 2 as a switch.
-  Serial.begin(9600); //Starts the serial for debug, optional.
   pixel_1.begin(); //Initialises the first LED, this will blank and turn off the LED ready for the instructions in the loop() section.
   pixel_2.begin(); //Initialises the second LED, this will blank and turn off the LED ready for the instructions in the loop() section.
 }
@@ -28,14 +27,10 @@ void loop() {
     pixel_2.setPixelColor(0, pixel_2.Color(255, 255, 255)); //White RGB Value
     pixel_1.show(); //Displays the colour previously defined
     pixel_2.show(); //Displays the colour previously defined
-    delay(1);
-    Serial.print("1111");
   } else if (digitalRead(Button)==HIGH){
     pixel_1.setPixelColor(0, pixel_1.Color(0, 55, 0)); //Red RGB Value
     pixel_2.setPixelColor(0, pixel_2.Color(0, 55, 0)); //Red RGB Value
     pixel_1.show(); //Displays the colour previously defined
     pixel_2.show(); //Displays the colour previously defined
-    delay(1);
-    Serial.print("2222");
   }
 }

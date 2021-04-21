@@ -1,4 +1,4 @@
-#include <Adafruit_NeoPixel.h> //Import the Adafruit Library to use the LEDS, can be found online or in the 'board docs' folder in my github repository.
+#include <Adafruit_NeoPixel.h> //Imports the Adafruit NeoPixel Library to use the LEDS, the .zip can be found online or in the 'docs' folder of this repository.
 #ifdef __AVR__
   #include <avr/power.h> //Power to the LEDS.
 #endif

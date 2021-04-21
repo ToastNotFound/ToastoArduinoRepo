@@ -102,7 +102,7 @@
 int tempo = 200;
 
 // change this to whichever pin you want to use
-int buzzer = 11;
+int buzzer = 8;
 
 
 // notes of the moledy followed by the duration.

@@ -10,7 +10,6 @@
 Adafruit_NeoPixel pixel_1(LED_COUNT, PIN2, NEO_RGB + NEO_KHZ800);
 Adafruit_NeoPixel pixel_2(LED_COUNT, PIN1, NEO_RGB + NEO_KHZ800);
 void setup() {
-  // put your setup code here, to run once:
 
 #if defined (__AVR_ATtiny85__)
   if (F_CPU == 16000000) clock_prescale_set(clock_div_1);
@@ -21,7 +20,7 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly
+
 
   if(digitalRead(Button)==LOW){
     red();

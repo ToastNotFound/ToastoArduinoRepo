@@ -24,25 +24,41 @@ void loop() {
   // put your main code here, to run repeatedly
 
   if(digitalRead(Button)==LOW){
-    pixel_1.setPixelColor(0, pixel_1.Color(0, 0, 0));
-    pixel_2.setPixelColor(0, pixel_2.Color(0, 55, 0));
-    pixel_1.show();
-    pixel_2.show();
+    red();
     delay(3000);
-    pixel_1.setPixelColor(0, pixel_1.Color(0, 0, 0));
-    pixel_2.setPixelColor(0, pixel_2.Color(255, 255, 0));
-    pixel_1.show();
-    pixel_2.show();
+    yellow();
     delay(3000);
-    pixel_1.setPixelColor(0, pixel_1.Color(255, 255, 0));
-    pixel_2.setPixelColor(0, pixel_2.Color(255, 255, 0));
-    pixel_1.show();
-    pixel_2.show();
+    double_yellow();
     delay(3000);
   } else {
+    green();
+  }
+}
+
+int green() {
     pixel_1.setPixelColor(0, pixel_1.Color(55, 0, 0));
     pixel_2.setPixelColor(0, pixel_2.Color(0, 0, 0));
     pixel_1.show();
     pixel_2.show();
-  }
+} 
+
+int red() {
+  pixel_1.setPixelColor(0, pixel_1.Color(0, 0, 0));
+    pixel_2.setPixelColor(0, pixel_2.Color(0, 55, 0));
+    pixel_1.show();
+    pixel_2.show();
+}
+
+int yellow() {
+    pixel_1.setPixelColor(0, pixel_1.Color(0, 0, 0));
+    pixel_2.setPixelColor(0, pixel_2.Color(255, 255, 0));
+    pixel_1.show();
+    pixel_2.show();
+}
+
+int double_yellow() {
+    pixel_1.setPixelColor(0, pixel_1.Color(255, 255, 0));
+    pixel_2.setPixelColor(0, pixel_2.Color(255, 255, 0));
+    pixel_1.show();
+    pixel_2.show();
 }

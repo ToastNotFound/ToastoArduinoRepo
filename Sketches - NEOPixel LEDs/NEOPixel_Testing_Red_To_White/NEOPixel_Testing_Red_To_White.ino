@@ -28,8 +28,8 @@ void loop() {
     pixel_1.show(); //Displays the colour previously defined
     pixel_2.show(); //Displays the colour previously defined
   } else if (digitalRead(Button)==HIGH){
-    pixel_1.setPixelColor(0, pixel_1.Color(0, 55, 0)); //Red RGB Value
-    pixel_2.setPixelColor(0, pixel_2.Color(0, 55, 0)); //Red RGB Value
+    pixel_1.setPixelColor(0, pixel_1.Color(0, 255, 0)); //Red RGB Value
+    pixel_2.setPixelColor(0, pixel_2.Color(0, 255, 0)); //Red RGB Value
     pixel_1.show(); //Displays the colour previously defined
     pixel_2.show(); //Displays the colour previously defined
   }

@@ -38,7 +38,7 @@ void loop()
 
 int green() 
 {
-    pixel_1.setPixelColor(0, pixel_1.Color(55, 0, 0));
+    pixel_1.setPixelColor(0, pixel_1.Color(255, 0, 0));
     pixel_2.setPixelColor(0, pixel_2.Color(0, 0, 0));
     pixel_1.show();
     pixel_2.show();
@@ -47,7 +47,7 @@ int green()
 int red() 
 {
   pixel_1.setPixelColor(0, pixel_1.Color(0, 0, 0));
-    pixel_2.setPixelColor(0, pixel_2.Color(0, 55, 0));
+    pixel_2.setPixelColor(0, pixel_2.Color(0, 255, 0));
     pixel_1.show();
     pixel_2.show();
 }

@@ -26,7 +26,7 @@ void loop()
     pixel_2.setPixelColor(0, pixel_2.Color(0, 0, 0));
     pixel_1.show();
     pixel_2.show();
-    delay(10)
+    delay(1000);
     pixel_1.setPixelColor(0, pixel_1.Color(255, 255, 255));
     pixel_2.setPixelColor(0, pixel_2.Color(255, 255, 255));
     pixel_1.show();
